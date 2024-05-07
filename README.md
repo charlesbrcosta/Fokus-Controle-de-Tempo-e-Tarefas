@@ -42,7 +42,7 @@ Este projeto tem como objetivo a construção de um aplicativo web utilizando a 
 
 ## :mag: Demonstração
 
-Para uma experiência completa e visual do projeto Fokus em funcionamento, você pode acessar a demonstração interativa do projeto, [clicando aqui.]()
+Para uma experiência completa e visual do projeto Fokus em funcionamento, você pode acessar a demonstração interativa do projeto, [clicando aqui.](https://charlesbrcosta.github.io/Fokus-Controle-de-Tempo-e-Tarefas/)
 
 ## :warning: Pré-requisitos
 
@@ -53,8 +53,8 @@ Para uma experiência completa e visual do projeto Fokus em funcionamento, você
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-projeto.git
-   cd seu-projeto
+   git clone https://github.com/charlesbrcosta/Fokus-Controle-de-Tempo-e-Tarefas.git
+   cd Fokus-Controle-de-Tempo-e-Tarefas
 
 2. Abra o arquivo index.html no seu navegador.
 
