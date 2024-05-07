@@ -121,8 +121,6 @@ function handleUpdateTimerDisplay() {
     time.innerHTML = `${formattedTime}`;
 }
 
-handleUpdateTimerDisplay();
-
 // Funções auxiliares
 function handleSetbuttonActiveStyle(btn) {
     try {
@@ -157,8 +155,11 @@ buttons.forEach(button => {
 });
 
 startPause.addEventListener('click', handleStartOrPause);
+handleUpdateTimerDisplay();
+handleChangeContext();
 
 window.onload = () => {
     // Garante que o checkbox esteja desmarcado ao carregar ou atualizar a página.
     checkbox.checked  = false;
 }
+    
