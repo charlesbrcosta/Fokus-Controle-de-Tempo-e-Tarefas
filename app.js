@@ -44,6 +44,15 @@ musicFocoInput.addEventListener('change', () => {
     }
 });
 
+// Função inicializa as imagens
+function initializeImages() {
+    buttons.forEach(button => {
+        const attributeContext = button.getAttribute('data-contexto');
+        const imageSrc = `./imagens/${attributeContext}.png`;
+        new Image().src = imageSrc; // Carrega a imagem em cache
+    });
+}
+
 // Funções relacionadas ao contexto e mensagens
 const contextMessages = {
     'foco' : `
@@ -155,11 +164,10 @@ buttons.forEach(button => {
 });
 
 startPause.addEventListener('click', handleStartOrPause);
-handleUpdateTimerDisplay();
-handleChangeContext();
 
 window.onload = () => {
-    // Garante que o checkbox esteja desmarcado ao carregar ou atualizar a página.
+    initializeImages();
+    handleUpdateTimerDisplay();
     checkbox.checked  = false;
 }
     
